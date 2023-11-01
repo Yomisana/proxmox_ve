@@ -29,17 +29,16 @@ Package: amd64-microcode
 Pin: release o=Debian,a=unstable
 Pin-Priority: 500
 ```
+
 4. Update proxmox repo
 ```apt update && apt list --upgradable```
-```
+
 5. install cpu microcode
-```
-# Intel CPU
-apt install intel-microcode
-# AMD CPU
-apt install amd64-microcode
-```
-6. reboot
+ - Intel CPU  
+```apt install intel-microcode```
+ - AMD CPU  
+```apt install amd64-microcode```
+6. reboot  
 ```reboot```
 7. If restart finish check this command will know microcode is works
 ``journalctl -k --grep="microcode updated early to"``
