@@ -10,6 +10,7 @@
 ## "可能"可以解決虛擬機凍結問題
 > 在 proxmox 上安裝 intel/AMD microcode 軟體包可能可以解決
 > 這可能可以"大幅降低"，但可能"無法完全解決"。
+> 注意! 如果你有使用 CPU 漏洞，此處理器補丁包不要更新
 1. ```echo "deb http://deb.debian.org/debian/ unstable non-free-firmware" > /etc/apt/sources.list.d/debian-unstable.list```
 2. ```sudo nano /etc/apt/preferences.d/unstable-repo```
 3. paste this to unstable-repo file.
