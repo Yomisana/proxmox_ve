@@ -1,6 +1,6 @@
 # 伺服器硬體資訊
-CPU: 4core
-RAM: 4G
+CPU: 8core
+RAM: 8G
 
 # 優化設定檔
 ```
