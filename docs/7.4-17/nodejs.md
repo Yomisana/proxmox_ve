@@ -24,5 +24,16 @@
 ## 查看當前 nvm 所安裝的 Node.js 版本號
 > ~$ ```nvm ls```
 
-## 查看當前 nvm 所安裝的 Node.js 版本號
-> ~$ ```nvm ls```
+## nvm 安裝指定 Node.js 版本號
+> ~$ ```nvm install <version>```  
+> 例如:  
+> ~$ ```nvm install 16.14.2```
+## nvm 使用指定 Node.js 版本號
+> 注意! 這個只會對於當前的 終端機會話有指定，退出此會話會回到預設Nodejs版本號
+> ~$ ```nvm use 16.14.2```
+
+## 設定 nvm 預設 Node.js 版本號
+> ~$ ```nvm alias default <version | ex: 16.14.2>```
+
+## 針對單一檔案執行 Node.js 版本號
+> ~$ ```nvm run <version | ex: 16.14.2> some_script.js```
